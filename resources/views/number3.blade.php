@@ -23,12 +23,14 @@
     <body>
         <div>
             3. Write a PHP function to display JSON decode errors.<span>(<a href="/">Back to Homepage<a/>)</span><br>
+            <br>
+            Answer to number 3:
             <?php
                 echo "<pre>";
                     function json_error_message($json_str)
                     {
                     $json[] = $json_str;
-                    echo $json;
+                    // echo $json;
                     foreach ($json as $string)
                     {
                     echo 'Decoding: ' . $string."\n";
@@ -61,6 +63,8 @@
                     }
                     }
                     json_error_message('{"color1": "Red Color"}');
+                    echo "<br>";
+                    json_error_message('{"color1": "blue" "Red Col"}');
                 echo "</pre>";
             ?>
         </div>
